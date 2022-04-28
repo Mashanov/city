@@ -526,7 +526,7 @@ function newClick ()
     d.querySelector('#moneyShopText').innerText = ('$ ' + user.money);
 
     var time = new Date () / 1;
-    d.querySelector('#map').insertAdjacentHTML ('beforeend', '<div id="n' + time + '" class="baks" style="left: ' + (10 + (Math.random () * 70 | 0)) + '%">' + user.click + '$</div>');
+    d.querySelector('#map').insertAdjacentHTML ('beforeend', '<div id="n' + time + '" class="baks" style="left: ' + (10 + (Math.random () * 70 | 0)) + '%">' + (user.click * user.ads[2]) + '$</div>');
 
     setTimeout(() => {
 
