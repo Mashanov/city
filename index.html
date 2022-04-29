@@ -669,7 +669,7 @@ function passive ()
     if (user.ads[2] == 3 && (Number(user.ads[3]) + 120) <= (new Date () / 1000 | 0))
     user.ads[2] = 1;
 
-    if ((Number(user.ads[1]) + 180) <= (new Date () / 1000 | 0))
+    if ((Number(user.ads[1]) + 120) <= (new Date () / 1000 | 0))
     {
         
         if (d.querySelector('#adsMan').getAttribute('style') == null)
@@ -733,7 +733,7 @@ function closeShop (from)
 {
 
     from.parentNode.style.left = '-100%';
-    if ((Number(user.ads[0]) + 120) <= (new Date () / 1000 | 0))
+    if ((Number(user.ads[0]) + 60) <= (new Date () / 1000 | 0))
     {
 
         user.ads[0] = new Date () / 1000 | 0;
