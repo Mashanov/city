@@ -879,6 +879,7 @@ function musicRepeatTest ()
     setTimeout(musicRepeatTest, 1000);
     if (user.music == 1 && music.currentTime == 0) music.play ();
 }
+vkBridge.send('VKWebAppShowBannerAd');
 
 window.onblur = function(){music.pause ()}
 	</script>
